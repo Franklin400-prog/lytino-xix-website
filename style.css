@@ -1,84 +1,224 @@
-body {
-    background-color: #101820;
-    color: white;
-    font-family: Arial, sans-serif;
-    margin: 40px;
+
+/* GENERAL SETTINGS */
+* {
+    box-sizing: border-box;
 }
 
+body {
+    background: #0b1120;
+    color: #f8fafc;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* MAIN CONTAINER */
+.container {
+    width: 90%;
+    max-width: 950px;
+    margin: 50px auto;
+}
+
+/* MAIN HEADING */
 h1 {
-    color: #FFD700;
+    color: #ffd700;
     text-align: center;
+    font-size: 42px;
+    margin-bottom: 10px;
 }
 
 h2 {
-    color: #00D4FF;
+    color: #00d4ff;
 }
 
-p {
-    font-size: 18px;
-    line-height: 1.6;
-}.container {
-    max-width: 800px;
-    margin: 20px auto;
-}
-
-.card {
-    background-color: #243746;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    border: 1px solid #344957;
-}nav {
-    text-align: center;
-    margin: 25px 0;
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 30px 0;
 }
 
 nav a {
-    color: #00D4FF;
-    text-decoration: none;
-    margin: 10px;
-}
-
-.button {
-    display: inline-block;
-    background-color: #FFD700;
-    color: #101820;
-    padding: 12px 20px;
-    border-radius: 8px;
+    color: #00d4ff;
     text-decoration: none;
     font-weight: bold;
 }
 
-.button:hover {
-    background-color: #00D4FF;
-}/* Responsive design for small screens */
+nav a:hover {
+    color: #ffd700;
+}
 
+/* CONTENT CARDS */
+.card {
+    background: #172337;
+    padding: 25px;
+    margin-bottom: 22px;
+    border-radius: 15px;
+    border: 1px solid #293b53;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #00d4ff;
+}
+
+/* BUTTONS */
+.button,
+button {
+    display: inline-block;
+    background: #ffd700;
+    color: #0b1120;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.button:hover,
+button:hover {
+    background: #00d4ff;
+    transform: translateY(-2px);
+}
+
+/* LINKS */
+a {
+    transition: color 0.3s;
+}
+
+/* MOBILE RESPONSIVENESS */
 @media (max-width: 600px) {
-
-    body {
-        margin: 15px;
-    }
-
     .container {
-        width: 100%;
-        margin: 20px auto;
+        width: 92%;
+        margin: 25px auto;
     }
 
     h1 {
-        font-size: 26px;
+        font-size: 30px;
     }
 
-    nav a {
-        display: inline-block;
-        margin: 8px 5px;
+    nav {
+        gap: 15px;
     }
 
     .card {
-        padding: 15px;
+        padding: 18px;
+    }
+}
+
+/* GENERAL SETTINGS */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #0b1120;
+    color: #f8fafc;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* MAIN CONTAINER */
+.container {
+    width: 90%;
+    max-width: 950px;
+    margin: 50px auto;
+}
+
+/* MAIN HEADING */
+h1 {
+    color: #ffd700;
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #00d4ff;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 30px 0;
+}
+
+nav a {
+    color: #00d4ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* CONTENT CARDS */
+.card {
+    background: #172337;
+    padding: 25px;
+    margin-bottom: 22px;
+    border-radius: 15px;
+    border: 1px solid #293b53;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #00d4ff;
+}
+
+/* BUTTONS */
+.button,
+button {
+    display: inline-block;
+    background: #ffd700;
+    color: #0b1120;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.button:hover,
+button:hover {
+    background: #00d4ff;
+    transform: translateY(-2px);
+}
+
+/* LINKS */
+a {
+    transition: color 0.3s;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 600px) {
+    .container {
+        width: 92%;
+        margin: 25px auto;
     }
 
-    p {
-        font-size: 16px;
+    h1 {
+        font-size: 30px;
     }
 
+    nav {
+        gap: 15px;
+    }
+
+    .card {
+        padding: 18px;
+    }
 }
